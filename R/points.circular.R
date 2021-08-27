@@ -89,9 +89,12 @@ PointsCircularRad <- function(x, bins, stack, col, pch, iseries, nseries, start.
 ###### TO BE USED IN THE FUTURE .C("bincount", x, as.integer(length(x)), seq(0,2*pi,length.out=bins), as.integer(bins+1), counts = integer(bins), right = as.logical(TRUE), include = as.logical(FALSE), naok = FALSE, NAOK = FALSE, DUP = FALSE, PACKAGE = "base")$counts
       mids <- c(seq(arc/2, 2 * pi - pi/bins, length = bins) + pos.bins[iseries],2*pi)
       index <- cex*sep
-      for (i in 1:bins) {
+      for (i in 1:(bins+1)) {
          if (bins.count[i] != 0) {
             for (j in 0:(bins.count[i] - 1)) {
+               if (i == bins+1) {
+                    j <- j + bins.count[1]
+                  }
                r <- 1 + start.sep + j * index
                z <- r * cos(mids[i])
                y <- r * sin(mids[i])
