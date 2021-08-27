@@ -84,7 +84,7 @@ PointsCircularRad <- function(x, bins, stack, col, pch, iseries, nseries, start.
 #      for (i in 1:bins) {
 #         bins.count[i] <- sum(x < i * arc & x >= (i - 1) * arc)
 #      }
-      breaks <- seq(0,2*pi,length.out=(bins+1))
+      breaks <- c(0,seq(-pos.bins,2*pi+pos.bins,length.out=bins),2*pi)
       bins.count <- hist.default(x, breaks=breaks, plot=FALSE, right=TRUE)$counts
 ###### TO BE USED IN THE FUTURE .C("bincount", x, as.integer(length(x)), seq(0,2*pi,length.out=bins), as.integer(bins+1), counts = integer(bins), right = as.logical(TRUE), include = as.logical(FALSE), naok = FALSE, NAOK = FALSE, DUP = FALSE, PACKAGE = "base")$counts
       mids <- seq(arc/2, 2 * pi - pi/bins, length = bins) + pos.bins[iseries]
