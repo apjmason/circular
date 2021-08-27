@@ -79,7 +79,7 @@ PointsCircularRad <- function(x, bins, stack, col, pch, iseries, nseries, start.
    } else {
       x[x >= 2*pi] <- 2*pi-4*.Machine$double.eps
       arc <- (2 * pi)/bins
-      pos.bins <- ((1:nseries)-1/2)*arc/nseries-arc/2
+      pos.bins <- ((1:nseries)-1/2)*arc/nseries-arc
 #      bins.count <- c(1:bins)
 #      for (i in 1:bins) {
 #         bins.count[i] <- sum(x < i * arc & x >= (i - 1) * arc)
