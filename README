@@ -6,6 +6,8 @@ install_github('apjmason/circular')
 
 If circular was previously installed, Restart R session to register changes
 
+original available at https://cran.r-project.org/web/packages/circular/index.html 
+
 Austin Mason <amason@carleton.edu>
 
 
