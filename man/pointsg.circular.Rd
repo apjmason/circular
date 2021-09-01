@@ -57,9 +57,11 @@ A list with information on the plot: zero, rotation and next.points.
 # Generate sample data of 1 observation every 10 degrees
 # as circular data, 'geographics' sets 0 up with clockwise rotation 
 data.1 <- circular(seq(0,350,10),units="degrees",template="geographics") 
+
 # second data set at 5 degree intervals
 data.2 <- circular(seq(0,355,5),units="degrees",template="geographics") 
-res <- plotg.circular(data.1, col=1) 
+res <- plot.circular(data.1, col=1) 
+
 # stacking data with pointsg shifts bin midpoints to cardinal compass points
 pointsg.circular(data.2, plot.info=res, stack=TRUE, bins=16, col=2)
 
