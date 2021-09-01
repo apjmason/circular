@@ -176,8 +176,12 @@ export(
  lines.circular,
 # file plot.circular.R
  plot.circular, circle.control,
+# file plotg.circular.R
+ plotg.circular
 # file points.circular.R
  points.circular,
+# file pointsg.circular.R
+ pointsg.circular,
 # file plot.lsfit.circle.R
  plot.lsfit.circle,
 # file range.circular.R
