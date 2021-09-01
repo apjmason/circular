@@ -78,7 +78,7 @@ data.g <- circular(seq(0,350,10),units="degrees",template="geographics")
 plotg.circular(data.g, stack=TRUE, bins=8) 
 
 # Compare default plot.circular behavior which stacks between compass points
-plot.circular(data.vm, stack=TRUE, bins=150, shrink=1.5) 
+plot.circular(data.g, stack=TRUE, bins=150, shrink=1.5) 
 
 # add tick marks every 22.5 degrees to show major compass points
 ticks.circular(circular(seq(0,360,22.5),units="degrees",template="geographics"), tcl=0.1)
