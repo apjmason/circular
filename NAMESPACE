@@ -177,7 +177,7 @@ export(
 # file plot.circular.R
  plot.circular, circle.control,
 # file plotg.circular.R
- plotg.circular
+ plotg.circular,
 # file points.circular.R
  points.circular,
 # file pointsg.circular.R
