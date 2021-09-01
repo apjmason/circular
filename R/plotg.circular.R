@@ -1,7 +1,7 @@
 #############################################################
 #                                                           #
-#   plot.circular function                                  #
-#   Author: Claudio Agostinelli                             #
+#   plotg.circular function                                 #
+#   Author: Claudio Agostinelli/Austin Mason                #
 #   E-mail: claudio@unive.it                                #
 #   Date: August, 08, 2014                                  #
 #   Version: 0.7                                            #

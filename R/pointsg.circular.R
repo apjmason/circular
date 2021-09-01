@@ -1,7 +1,7 @@
 #############################################################
 #                                                           #
-#   points.circular function                                #
-#   Author: Claudio Agostinelli                             #
+#   pointsg.circular function                               #
+#   Author: Claudio Agostinelli/Austin Mason                #
 #   E-mail: claudio@unive.it                                #
 #   Date: August, 08, 2014                                  #
 #   Version: 0.4                                            #
