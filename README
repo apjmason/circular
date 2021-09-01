@@ -1,4 +1,16 @@
-  Version 0.4-7 2013/11/06
+MODIFIED PACKAGE 2021/9/1
+Adds pointsg and plotg functions to change default binning behavior for geographic datasets
+
+Install using R devtools library and calling
+install_github('apjmason/circular')
+
+If circular was previously installed, Restart R session to register changes
+
+Austin Mason <amason@carleton.edu>
+
+
+
+Version 0.4-7 2013/11/06
 
   This is the circular package build over the R port of the CircStats package 
   by Ulric Lund <ulund@calpoly.edu> from "Topics in circular Statistics" (2001) S. Rao Jammalamadaka and A. SenGupta, World Scientific.
@@ -7,4 +19,3 @@
 
 Claudio Agostinelli <claudio@unive.it>
 Ulric Lund <ulund@calpoly.edu>
-
