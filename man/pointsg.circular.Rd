@@ -56,8 +56,8 @@ A list with information on the plot: zero, rotation and next.points.
 \examples{
 data.1 <- rvonmises(n=100, mu=circular(0), kappa=3)
 data.2 <- rvonmises(n=100, mu=circular(pi/3), kappa=3) 
-res <- plotg(data.1, stack=FALSE, col=1) 
-pointsg(data.2, plot.info=res, col=2)
+res <- plot(data.1, stack=FALSE, col=1) 
+points(data.2, plot.info=res, col=2)
 }
 
 \keyword{hplot}

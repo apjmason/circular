@@ -75,13 +75,13 @@ A list with information on the plot: zero, rotation and next.points.
 data.vm <- rvonmises(n=100, mu=circular(0), kappa=3) 
 
 # Plot data set. All points do not fit on plot.
-plotg(data.vm, stack=TRUE, bins=150) 
+plot(data.vm, stack=TRUE, bins=150) 
 
 # Shrink the plot so that all points fit.
-plotg(data.vm, stack=TRUE, bins=150, shrink=1.5) 
+plot(data.vm, stack=TRUE, bins=150, shrink=1.5) 
 
 # Recentering the figure in a different place
-plotg(data.vm, stack=TRUE, bins=150, xlim=c(-1,1.2), ylim=c(-1,0)) 
+plot(data.vm, stack=TRUE, bins=150, xlim=c(-1,1.2), ylim=c(-1,0)) 
 
 }
 
