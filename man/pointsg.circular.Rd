@@ -54,10 +54,18 @@ A list with information on the plot: zero, rotation and next.points.
 }
 
 \examples{
-data.1 <- rvonmises(n=100, mu=circular(0), kappa=3)
-data.2 <- rvonmises(n=100, mu=circular(pi/3), kappa=3) 
-res <- plot(data.1, stack=FALSE, col=1) 
-points(data.2, plot.info=res, col=2)
+# Generate sample data of 1 observation every 10 degrees
+# as circular data, 'geographics' sets 0 up with clockwise rotation 
+data.1 <- circular(seq(0,350,10),units="degrees",template="geographics") 
+# second data set at 5 degree intervals
+data.2 <- circular(seq(0,355,5),units="degrees",template="geographics") 
+res <- plotg.circular(data.1, col=1) 
+# stacking data with pointsg shifts bin midpoints to cardinal compass points
+pointsg.circular(data.2, plot.info=res, stack=TRUE, bins=16, col=2)
+
+# without stack=TRUE, behaves identical to points.circular
+pointsg.circular(data.2, plot.info=res, col=2)
+
 }
 
 \keyword{hplot}

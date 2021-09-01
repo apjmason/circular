@@ -70,18 +70,18 @@ A list with information on the plot: zero, rotation and next.points.
 }
 
 \examples{
-# Generate 100 observations from a von Mises distribution.
-# with mean direction 0 and concentration 3.
-data.vm <- rvonmises(n=100, mu=circular(0), kappa=3) 
+# Generate sample data of 1 observation every 10 degrees
+# as circular data, 'geographics' sets 0 up with clockwise rotation 
+data.g <- circular(seq(0,350,10),units="degrees",template="geographics")
 
-# Plot data set. All points do not fit on plot.
-plot(data.vm, stack=TRUE, bins=150) 
+# Plot data set. with 8 bins, stacked at cardinal compass points
+plotg.circular(data.g, stack=TRUE, bins=8) 
 
-# Shrink the plot so that all points fit.
-plot(data.vm, stack=TRUE, bins=150, shrink=1.5) 
+# Compare default plot.circular behavior which stacks between compass points
+plot.circular(data.vm, stack=TRUE, bins=150, shrink=1.5) 
 
-# Recentering the figure in a different place
-plot(data.vm, stack=TRUE, bins=150, xlim=c(-1,1.2), ylim=c(-1,0)) 
+# add tick marks every 22.5 degrees to show major compass points
+ticks.circular(circular(seq(0,360,22.5),units="degrees",template="geographics"), tcl=0.1)
 
 }
 
